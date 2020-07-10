@@ -1,0 +1,17 @@
+.children{
+    background-color: powderblue;
+    padding: 5px;
+    margin: 10px;
+}
+
+.c1{
+    float: left;
+    border: 1px solid black;
+    width: 30%;
+}
+
+.c2{
+    float: left;
+    border: 1px solid blue;
+    width: 30%;
+}

@@ -1,0 +1,35 @@
+1. Interactive
+2. Do not hesitate
+3. Do necessary hands-on/assessments
+4. Be comfortable with pre-requisite ASAP (HTML5, CSS3, JS)
+
+2007/2008 - Developed AngularJS (Obselete)
+2010 - AngularJS was made public (controllers, 2 way data-binding, directives)
+     - Eric Schmidt (The CEO of Google) - Mobile First Strategy
+2012 - Many other front end libraries and frameworks were launched! (EmberJS, ExtJS, VueJS, Mousetach JS, Backbone JS)	
+     - Angular JS took the best of all slowly! 
+     - Still, Angular JS was not adopted much in enterprises!
+2014 - React (library - Manage UI - used internally within facebook)
+2015 - React was made public
+2016 Sept - Angular 2 - was completely re-written Angular JS framework!
+2016 Sept + 6 month -> no of downloads for A2 was already double the no of downloads for Angular JS from 2010 to 2016.
+				components,
+				directives,
+				pipes,
+				template driven forms,
+				reactive forms,
+				services,
+				routes  -> create SPA,
+				httpclient,
+				animations
+2017 - Sundar Pichai - AI First Strategy
+2020 - Data Science, AI, ML, Voice Based Apps, Virtual Apps
+2020 Mar - Angular 9
+2020 July - Angular 10
+
+
+
+
+npm -> node package manager (nugest as in .net or maven as in java) -> npm as in javascript application!
+npm  is used to manage all project dependencies and build, test, deploy the angular project or javascript project!
+	

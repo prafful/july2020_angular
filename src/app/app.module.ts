@@ -9,6 +9,12 @@ import { HometownComponent } from './family/hometown/hometown.component';
 import { ParentsComponent } from './family/parents/parents.component';
 import { Child1Component } from './family/child1/child1.component';
 import { Child2Component } from './family/child2/child2.component';
+import { ForComponent } from './directives/for/for.component';
+import { IfComponent } from './directives/if/if.component';
+import { SwitchcaseComponent } from './directives/switchcase/switchcase.component';
+import { ClassComponent } from './directives/class/class.component';
+import { StyleComponent } from './directives/style/style.component';
+import { AlldirectiveComponent } from './directives/alldirective/alldirective.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,13 @@ import { Child2Component } from './family/child2/child2.component';
     HometownComponent,
     ParentsComponent,
     Child1Component,
-    Child2Component
+    Child2Component,
+    ForComponent,
+    IfComponent,
+    SwitchcaseComponent,
+    ClassComponent,
+    StyleComponent,
+    AlldirectiveComponent
   ],
   imports: [
     BrowserModule,

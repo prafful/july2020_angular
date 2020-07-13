@@ -1,0 +1,36 @@
+<p>if works!</p>
+<div>*ngIf demo:</div>
+<button (click)="toggleDisplayBox()">Toggle DisplayBox</button>
+&nbsp;
+<button (click)="toggleDisplayName()">Toggle DisplayName</button>
+<br>
+displaybox: {{ displaybox }}
+<br>
+displayname: {{displayname}}
+<div *ngIf='displaybox'>
+    <div style="width: 100px; height: 100px; background-color: greenyellow; padding:5px">
+        *ngIf Directive Demo!!!!
+    </div>
+</div>
+
+<p *ngIf="displayname">Prafful Daga</p>
+<div>*ngIf with else demo:</div>
+<button (click)="toggleDisplayElse()">Toggle DisplayElse</button>
+<div *ngIf="displayelse; else showme;">
+    <div style="width: 100px; height: 100px; background-color: pink; padding:5px">
+        *ngIf Eith Else Directive Demo!!!!
+    </div>
+</div>
+
+<ng-template #showme>
+    <div style="width: 100px; height: 100px; background-color: purple; padding:5px">
+        I am showme!!!!
+    </div>
+</ng-template>
+
+<p *ngIf="0">0. Can you see me????</p>
+<p *ngIf="1">1. Can you see me????</p>
+<p *ngIf="iamstring">3. Can you see me????</p>
+<p *ngIf="iamnullstring">4. Can you see me????</p>
+<p *ngIf="5>6">5. Can you see me????</p>
+<p *ngIf="10>8">6. Can you see me????</p>

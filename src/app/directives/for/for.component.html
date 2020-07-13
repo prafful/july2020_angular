@@ -1,0 +1,15 @@
+<p>for works!</p>
+<div>*ngFor demo (basic array):</div>
+Salary: {{ salary }}
+<ol>
+    <li *ngFor='let s of salary'>{{s}}</li>
+</ol>
+<div>*ngFor demo (array of JSON objects):</div>
+Friends: {{ friends }}
+<ol>
+  <li *ngFor="let f of friends; let counter=index">
+      {{f.id + ". " +  f.title }} with status: {{ f.completed }} 
+      <button (click)="displayFriend(counter)">Click {{ f.id }} at counter {{ counter }}</button>
+  </li>
+</ol>
+

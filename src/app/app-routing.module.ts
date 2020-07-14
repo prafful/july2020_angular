@@ -8,6 +8,12 @@ import { IfComponent } from "./directives/if/if.component";
 import { SwitchcaseComponent } from './directives/switchcase/switchcase.component';
 import { ClassComponent } from './directives/class/class.component';
 import { StyleComponent } from './directives/style/style.component';
+import { AllpipesComponent } from './pipes/allpipes/allpipes.component';
+import { InbuiltComponent } from './pipes/inbuilt/inbuilt.component';
+import { CustomComponent } from './pipes/custom/custom.component';
+import { AllformsComponent } from './forms/allforms/allforms.component';
+import { TemplateComponent } from './forms/template/template.component';
+import { ReactiveComponent } from './forms/reactive/reactive.component';
 
 
 const routes: Routes = [
@@ -42,6 +48,35 @@ const routes: Routes = [
       {
         path:'style-direc',
         component:StyleComponent
+      }
+    ]
+  },
+  {
+    path:'pipes',
+    component:AllpipesComponent,
+    children:[
+      {
+        path:'inbuilt',
+        component:InbuiltComponent
+      },
+      {
+        path:'custom',
+        component:CustomComponent
+      }
+    ],
+   
+  }, 
+  {
+    path:'forms',
+    component: AllformsComponent,
+    children:[
+      {
+        path:'template',
+        component:TemplateComponent
+      },
+      {
+        path:'reactive',
+        component:ReactiveComponent
       }
     ]
   }

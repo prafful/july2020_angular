@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";   //needed for template driven forms
+
 //
 import { AppRoutingModule } from './app-routing.module';
 import { RootComponent } from './app.component';
@@ -15,6 +17,13 @@ import { SwitchcaseComponent } from './directives/switchcase/switchcase.componen
 import { ClassComponent } from './directives/class/class.component';
 import { StyleComponent } from './directives/style/style.component';
 import { AlldirectiveComponent } from './directives/alldirective/alldirective.component';
+import { AllpipesComponent } from './pipes/allpipes/allpipes.component';
+import { InbuiltComponent } from './pipes/inbuilt/inbuilt.component';
+import { CustomComponent } from './pipes/custom/custom.component';
+import { SortstringPipe } from './custompipe/sortstring.pipe';
+import { AllformsComponent } from './forms/allforms/allforms.component';
+import { TemplateComponent } from './forms/template/template.component';
+import { ReactiveComponent } from './forms/reactive/reactive.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +39,19 @@ import { AlldirectiveComponent } from './directives/alldirective/alldirective.co
     SwitchcaseComponent,
     ClassComponent,
     StyleComponent,
-    AlldirectiveComponent
+    AlldirectiveComponent,
+    AllpipesComponent,
+    InbuiltComponent,
+    CustomComponent,
+    SortstringPipe,
+    AllformsComponent,
+    TemplateComponent,
+    ReactiveComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [RootComponent]

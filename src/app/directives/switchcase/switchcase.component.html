@@ -1,1 +1,32 @@
 <p>switchcase works!</p>
+<div>ngSwitchCase Demo:</div>
+
+Experience: {{experience}}
+<br>
+<br>
+<div [ngSwitch]="experience">
+
+        <div *ngSwitchCase="'one'">
+            <div>One year experience - > Fresher</div>
+        </div>
+
+        <div *ngSwitchCase="'two'">
+            <div>Two year experience - > Associate</div>
+        </div>
+
+        <div *ngSwitchCase="'three'">
+            <div>Three year experience - > Senior Associate L1</div>
+        </div>
+
+        <div *ngSwitchCase="'four'">
+            <div>Four year experience - > Senior Associate L2</div>
+        </div>
+
+        <div *ngSwitchDefault>
+            <div>I have no idea!</div>
+        </div>
+
+
+
+
+</div>

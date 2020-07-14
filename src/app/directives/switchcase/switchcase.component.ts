@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SwitchcaseComponent implements OnInit {
 
+  experience:string = "one"
+
   constructor() { }
 
   ngOnInit(): void {

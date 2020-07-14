@@ -1,1 +1,28 @@
 <p>template works!</p>
+
+<div>
+    Template Driven Form!!!!
+</div>
+
+<form #enginnerForm="ngForm" (ngSubmit)="saveEnginnerData(enginnerForm)">
+    First Name: 
+    <input type="text" name="firstname" [(ngModel)]="fname" required> {{ fname }}
+    &nbsp;
+    <span *ngIf="enginnerForm.controls.firstname.invalid
+                && (enginnerForm.controls.firstname.dirty
+                || enginnerForm.controls.firstname.touched)">First name is mandatory!!!!</span>
+    <br>
+    Last Name:
+    <input type="text" name="lastname" [(ngModel)]="lname" required> {{lname}} <br>
+    Programming:
+    <select name="prog" [(ngModel)]="programming">
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="javascript">Javascript</option>
+    </select>
+    {{ programming }}
+    <br>
+    <br>
+    <button type="submit" [disabled]="enginnerForm.invalid">Add</button>
+
+</form>

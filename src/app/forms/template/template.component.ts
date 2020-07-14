@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateComponent implements OnInit {
 
+  fname: string = null
+  lname:string = null
+  programming:string = null
+
+  saveEnginnerData=(ef)=>{
+    console.log("Captured Submit Even for Enginner Form!!!!")
+    console.log(ef)
+    console.log(ef.value)
+  }
+
   constructor() { }
 
   ngOnInit(): void {

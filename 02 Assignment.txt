@@ -1,0 +1,6 @@
+Implement input type of range with minimum value of 0 and maximum value of 255 in "style component" . 
+Ref: https://www.w3schools.com/tags/att_input_type_range.asp
+
+Implement input type of range for 3 variables: red, green and blue to capture color code between 0 to 255 fot rach variable respectively.
+
+Implement a box (div with width and height) in view of style component, which has background color as mix of red + green  + blue!

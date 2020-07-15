@@ -14,6 +14,8 @@ import { CustomComponent } from './pipes/custom/custom.component';
 import { AllformsComponent } from './forms/allforms/allforms.component';
 import { TemplateComponent } from './forms/template/template.component';
 import { ReactiveComponent } from './forms/reactive/reactive.component';
+import { ConsumeserviceComponent } from './consume/consumeservice/consumeservice.component';
+import { RemoteComponent } from './consume/remote/remote.component';
 
 
 const routes: Routes = [
@@ -79,6 +81,14 @@ const routes: Routes = [
         component:ReactiveComponent
       }
     ]
+  },
+  {
+    path:'service',
+    component:ConsumeserviceComponent
+  },
+  {
+    path:'remote',
+    component:RemoteComponent
   }
 ];
 

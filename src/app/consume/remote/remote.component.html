@@ -1,0 +1,27 @@
+<p>remote works!</p>
+Score: {{score}}
+<br>
+Friends:
+<br>
+<br>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let f of friends">
+            <td> {{f.id}} </td>
+            <td> {{f.name}} </td>
+            <td> {{f.username}} </td>
+            <td> {{f.address.geo.lat}} </td>
+            <td> {{f.address.geo.lng}} </td>
+        </tr>
+    </tbody>
+</table>

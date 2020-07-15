@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";   //needed for template driven forms
 import {  ReactiveFormsModule} from "@angular/forms"; //needed for reactive forms
+import { HttpClientModule } from "@angular/common/http";
 
 //
 import { AppRoutingModule } from './app-routing.module';
@@ -25,6 +26,8 @@ import { SortstringPipe } from './custompipe/sortstring.pipe';
 import { AllformsComponent } from './forms/allforms/allforms.component';
 import { TemplateComponent } from './forms/template/template.component';
 import { ReactiveComponent } from './forms/reactive/reactive.component';
+import { ConsumeserviceComponent } from './consume/consumeservice/consumeservice.component';
+import { RemoteComponent } from './consume/remote/remote.component';
 
 @NgModule({
   declarations: [
@@ -47,13 +50,16 @@ import { ReactiveComponent } from './forms/reactive/reactive.component';
     SortstringPipe,
     AllformsComponent,
     TemplateComponent,
-    ReactiveComponent
+    ReactiveComponent,
+    ConsumeserviceComponent,
+    RemoteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [RootComponent]

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";   //needed for template driven forms
+import {  ReactiveFormsModule} from "@angular/forms"; //needed for reactive forms
 
 //
 import { AppRoutingModule } from './app-routing.module';
@@ -51,7 +52,8 @@ import { ReactiveComponent } from './forms/reactive/reactive.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [RootComponent]

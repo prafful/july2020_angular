@@ -1,1 +1,28 @@
 <p>reactive works!</p>
+
+<div>
+    Reactive Form!!!!
+</div>
+
+<form [formGroup]="reactiveEnginner" (ngSubmit)="saveEnginnerData(reactiveEnginner)">
+    First Name: 
+    <input type="text" formControlName="fname" > {{ fname }}
+    &nbsp;
+    <span *ngIf="reactiveEnginner.controls.fname.invalid
+    && (reactiveEnginner.controls.fname.dirty
+    || reactiveEnginner.controls.fname.touched)">First name is mandatory. a-z or A-Z with " " only. Minimum length is 3.</span>
+    <br>
+    Last Name:
+    <input type="text" formControlName="lname" > {{lname}} <br>
+    Programming:
+    <select formControlName="programming">
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="javascript">Javascript</option>
+    </select>
+    {{ programming }}
+    <br>
+    <br>
+    <button type="submit" [disabled]="reactiveEnginner.invalid">Add</button>
+
+</form>

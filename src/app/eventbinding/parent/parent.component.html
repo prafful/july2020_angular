@@ -1,0 +1,8 @@
+
+Parent Component:
+<br>
+<br>
+Name: <input type="text" [(ngModel)]="name"> {{name}}
+<hr>
+<br>
+<cts-child [sendname]="name" (broadcastName)="getName($event)"></cts-child>

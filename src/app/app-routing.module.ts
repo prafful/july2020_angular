@@ -16,9 +16,18 @@ import { TemplateComponent } from './forms/template/template.component';
 import { ReactiveComponent } from './forms/reactive/reactive.component';
 import { ConsumeserviceComponent } from './consume/consumeservice/consumeservice.component';
 import { RemoteComponent } from './consume/remote/remote.component';
+import { NotfoundComponent } from './badroute/notfound/notfound.component';
+import { TextanimateComponent } from './animation/textanimate/textanimate.component';
+import { ParentComponent } from './eventbinding/parent/parent.component';
 
 
 const routes: Routes = [
+  //default route - on top!
+  {
+    path:'',
+    redirectTo:'dummy',
+    pathMatch:'full'
+  },
   {
     path:'dummy',
     component:Dummy1Component
@@ -57,6 +66,12 @@ const routes: Routes = [
     path:'pipes',
     component:AllpipesComponent,
     children:[
+       //default child route - on top!
+      {
+        path:'',
+        redirectTo:'custom',
+        pathMatch:'full'
+      },
       {
         path:'inbuilt',
         component:InbuiltComponent
@@ -89,8 +104,21 @@ const routes: Routes = [
   {
     path:'remote',
     component:RemoteComponent
+  },
+  {
+    path:'animate',
+    component:TextanimateComponent
+  },
+  {
+    path:'eventbinding',
+    component:ParentComponent
+  },
+
+  {
+    path:'**',
+    component:NotfoundComponent
   }
-];
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

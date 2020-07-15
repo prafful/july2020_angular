@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";   //needed for template driven forms
 import {  ReactiveFormsModule} from "@angular/forms"; //needed for reactive forms
 import { HttpClientModule } from "@angular/common/http";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 //
 import { AppRoutingModule } from './app-routing.module';
@@ -28,6 +29,10 @@ import { TemplateComponent } from './forms/template/template.component';
 import { ReactiveComponent } from './forms/reactive/reactive.component';
 import { ConsumeserviceComponent } from './consume/consumeservice/consumeservice.component';
 import { RemoteComponent } from './consume/remote/remote.component';
+import { NotfoundComponent } from './badroute/notfound/notfound.component';
+import { TextanimateComponent } from './animation/textanimate/textanimate.component';
+import { ParentComponent } from './eventbinding/parent/parent.component';
+import { ChildComponent } from './eventbinding/child/child.component';
 
 @NgModule({
   declarations: [
@@ -52,14 +57,19 @@ import { RemoteComponent } from './consume/remote/remote.component';
     TemplateComponent,
     ReactiveComponent,
     ConsumeserviceComponent,
-    RemoteComponent
+    RemoteComponent,
+    NotfoundComponent,
+    TextanimateComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [RootComponent]

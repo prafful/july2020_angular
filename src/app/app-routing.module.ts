@@ -19,6 +19,7 @@ import { RemoteComponent } from './consume/remote/remote.component';
 import { NotfoundComponent } from './badroute/notfound/notfound.component';
 import { TextanimateComponent } from './animation/textanimate/textanimate.component';
 import { ParentComponent } from './eventbinding/parent/parent.component';
+import { TodoComponent } from './crud/todo/todo.component';
 
 
 const routes: Routes = [
@@ -113,7 +114,10 @@ const routes: Routes = [
     path:'eventbinding',
     component:ParentComponent
   },
-
+  {
+    path:'crud',
+    component:TodoComponent
+  },
   {
     path:'**',
     component:NotfoundComponent

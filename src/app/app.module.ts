@@ -33,6 +33,7 @@ import { NotfoundComponent } from './badroute/notfound/notfound.component';
 import { TextanimateComponent } from './animation/textanimate/textanimate.component';
 import { ParentComponent } from './eventbinding/parent/parent.component';
 import { ChildComponent } from './eventbinding/child/child.component';
+import { TodoComponent } from './crud/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { ChildComponent } from './eventbinding/child/child.component';
     NotfoundComponent,
     TextanimateComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,

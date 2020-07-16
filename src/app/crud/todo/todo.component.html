@@ -1,0 +1,66 @@
+<p>todo works!</p>
+
+
+
+<div>
+    <button *ngIf="!displayAddTodo" (click)="openAddTodoField()" >Add Todo</button> &nbsp;
+    <span *ngIf="displayAddTodo">
+        <form #todoform="ngForm">
+            Todo item: <input type="text" #mytodo  name="todo" [(ngModel)]='newtodo' minlength='4' required>
+            &nbsp;
+            Status: <input type="text" name="status" [(ngModel)]='newtodostatus' readonly>
+            &nbsp;
+            <button [disabled]='todoform.invalid' (click)="captureNewTodo(todoform)">Add</button>
+            &nbsp;
+            <button (click)="closeAddTodoField()">Cancel</button>
+        </form>
+    </span>  
+    
+    <br>
+    <br>
+
+    <span *ngIf="displayEditTodo">
+        <form #todoform="ngForm">
+            Id: <input type="text" name="id"  [(ngModel)]='edittodoid' readonly>
+            &nbsp;
+            Todo item: <input type="text" #mytodo  name="todo" [(ngModel)]='edittodo' minlength='4' required>
+            &nbsp;
+            Status: <input type="text" name="status" [(ngModel)]='edittodostatus' >
+            &nbsp;
+            <button [disabled]='todoform.invalid' (click)="captureEditTodo(todoform)">Edit</button>
+            &nbsp;
+            <button (click)="closeAddTodoField()">Cancel</button>
+        </form>
+    </span>  
+
+
+
+</div>
+<br>
+All Todos:
+<br>
+<br>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Todo</th>
+            <th>Status</th>
+            <th colspan="2">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todo of todos">
+            <td> {{todo.id}} </td>
+            <td> {{todo.todo}} </td>
+            <td> {{todo.status}} </td>
+            <td>
+                <button (click)="openEditTodoField(todo.id)">Edit</button>
+            </td>
+            <td>
+                <button (click)="removeTodo(todo.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

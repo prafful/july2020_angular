@@ -1,0 +1,39 @@
+{
+  "todolist": [
+    {
+      "id": 1,
+      "todo": "Plan the Hybrid App Dev",
+      "status": "done"
+    },
+    {
+      "todo": "Get certified for GCP",
+      "status": "pending",
+      "id": 3
+    },
+    {
+      "todo": "Webseries for family at weekend",
+      "status": "pending",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "todo": "AWS certification",
+      "status": "done"
+    },
+    {
+      "todo": "Launch a game for android!",
+      "status": "pending",
+      "id": 6
+    },
+    {
+      "todo": "Spring Certification with Microservices",
+      "status": "pending",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "todo": "Get some sweets!",
+      "status": "done"
+    }
+  ]
+}
